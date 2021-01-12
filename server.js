@@ -11,8 +11,6 @@ const path = require('path') ;
 const app = express() ;
 const port = 3000 || process.env.PORT ;
 
-const folder_path = process.env.DRIVE_FOLDER ;
-
 app.use(cors());
 app.use(express.json()) ;
 app.use(express.urlencoded({extended: true})) ;
@@ -26,7 +24,7 @@ function log(msg){
 
 async function loadModel(){
     try{
-        model = await tf.node.loadSavedModel ;
+        model = await tf.node.loadSavedModel('./model/tf_saved_model') ;
         log('Model Loaded') ;
     }
     catch(err){
