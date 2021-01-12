@@ -3,8 +3,6 @@ This NodeJs server is used for serving the Angular generated front-end files and
 
 Check the Front-End here: [Medclify](https://github.com/splintercell9dev/medclify)
 
-Running demo: [Here](https://medclify.herokuapp.com/)
-
 # Supported Leaf Classifications
 
 * ACACIA AURICULIFORMIS,
